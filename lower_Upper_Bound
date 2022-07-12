@@ -1,0 +1,32 @@
+int LB(vi arr,int target){
+int n=arr.size();
+int beg=0, end=n-1,ans=n;
+while(beg<=end){
+int mid=(beg+end)/2;
+if(arr[mind]>=target)
+   beg=mid+1;
+   
+ else ans=mid,end=mid-1;  
+}
+return ans;
+}
+
+
+int UpB(vi arr,int target){
+int n=arr.size();
+int beg=0, end=n-1,ans=n;
+while(beg<end){
+int mid=(beg+end)/2;
+if(arr[mind]>target)
+   beg=mid+1;
+   
+ else ans=mid,end=mid-1;  
+}
+return ans;
+}
+
+int main(){
+vi arr={1,5,2,7,6,10,11};
+cout<< count_searchable(arr);
+
+}
